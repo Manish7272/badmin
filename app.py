@@ -47,7 +47,7 @@ if mode == 'Video Upload':
 
     if uploaded_file:
         # Save uploaded file temporarily
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = tempfile.NamedTemporaryFile(delete=False)
         input_video_path = os.path.join(temp_dir, uploaded_file.name)
         
         with open(input_video_path, "wb") as f:
