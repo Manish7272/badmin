@@ -1,0 +1,152 @@
+
+/* video/live text */
+.st-emotion-cache-p7i6r9 p {
+    color: white !important;
+}
+.stRadio label {
+    color: white !important;
+}
+
+.stFileUploader label {
+    color: white !important;
+}
+
+/* box  */
+.st-emotion-cache-xgz272 .e17y52ym0{
+    background-color:black;
+}
+
+/* Drag and drop file here */ 
+.st-emotion-cache-9ycgxx {
+    margin-bottom: 0.25rem;
+    color: #969ba3;
+}
+
+/* Limit 200MB per file  */
+.st-emotion-cache-1rpn56r {
+    color: #3f434a;
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+
+ /* <> */
+.st-emotion-cache-1f3w014{
+color: red;}
+
+.stFileUploader {
+    border-radius: 10px !important;         
+    border: 2px solid black !important;  
+    padding: 15px !important;               
+}
+
+/* Change sidebar text color */
+section[data-testid="stSidebar"] {
+    background-color: #121526;
+}
+
+.st-emotion-cache-1fmytai h1, .st-emotion-cache-1fmytai h2, .st-emotion-cache-1fmytai h3, .st-emotion-cache-1fmytai h4, .st-emotion-cache-1fmytai h5, .st-emotion-cache-1fmytai h6, .st-emotion-cache-1fmytai span {
+    scroll-margin-top: 3.75rem;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+@media (min-width: calc(736px + 8rem)) {
+    .st-emotion-cache-t1wise {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 20px;
+    }
+}
+ /* ---------------------------------------- */
+.stApp {
+    background-color: black;
+    color: white;
+    padding-top:0%
+}
+
+/* Hide the top header (optional) */
+header[data-testid="stHeader"] {
+    background-color: black;
+}
+
+/* Change the text color of the header */
+header[data-testid="stHeader"] * {
+    color: white !important;
+}
+
+/* ---------------------------------------- */
+/* Common background for Player 1 & 2 */
+div[data-testid="stColumn"] {
+    background-color: #121526;
+    padding: 15px !important;
+    border-radius: 10px !important;
+}
+
+/* Styling for the metric cards */
+.stMetric {
+    background-color: #5590db;
+    color: black !important;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 110px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+/* Chart background */
+.stPlotlyChart {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* ################## -------- metric --------- ################ */
+/* Styling for the metrics container */
+.metrics-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styling for individual  metric  items */
+.metric-item {
+    background-color: #636EFA; 
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    height: 150px;
+    border: 2px solid black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styling for the label inside the metric items (e.g., "ForehandLift count") */
+.metric-item .label {
+    color: black !important; /* Label color */
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+/* Styling for the value inside the metric items */
+.metric-item .value {
+    color: white;
+    font-size: 30px;
+}
+ /* Hover effect for metric items */
+.metric-item:hover {
+    transform: translateY(-20px);  /* Lift the card when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55);  /* Enhance shadow on hover */
+}

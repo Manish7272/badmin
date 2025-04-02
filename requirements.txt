@@ -1,0 +1,8 @@
+streamlit
+streamlit-option-menu
+pandas
+matplotlib
+seaborn
+plotly
+opencv-python
+ultralytics
