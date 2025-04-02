@@ -118,11 +118,13 @@ if st.session_state.detection_complete:
     with player1: #-----------------------------------------------
         st.title("Player 1 Performance")
 
-        ForehandLift_count = p1poses["Pose"].str.count("ForehandLift").sum()
-
-        BackhandLift_count = p1poses["Pose"].str.count("BackhandLift").sum()
-
-        Smash_count = (p1poses["Pose"].str.count("Smash").sum())
+        if "Pose" in p1poses.columns:
+            ForehandLift_count = p1poses["Pose"].str.count("ForehandLift").sum()
+            BackhandLift_count = p1poses["Pose"].str.count("BackhandLift").sum()
+            Smash_count = p1poses["Pose"].str.count("Smash").sum()
+        else:
+            ForehandLift_count = BackhandLift_count = Smash_count = 0
+            st.warning("⚠️ 'Pose' column not found in player 1 data.")
         
         p1_speed_avg = int(player_stats["Player 1 Speed"].mean())
         
