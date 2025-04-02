@@ -36,7 +36,7 @@ if "detection_complete" not in st.session_state:
 st.title("🏸 Badminton Video Analysis")
 
 # --------------------------------------------------------------------------------
-st.sidebar.image(r"images\img.png", width=200)
+# st.sidebar.image(r"images\img.png", width=200)
 
 mode = st.sidebar.radio("Select Mode", ("Video Upload", "Live Camera"))
 
