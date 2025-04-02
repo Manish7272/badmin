@@ -219,20 +219,20 @@ def analyze_badminton_video(video_path, model_paths, stats_output_paths):
 
 # -------------------------------------------- MP4 to h.264 --------------------
 
-def convert_to_h264(input_file, output_file):
-    command = [
-        "ffmpeg",
-        "-i", input_file,          # Input file
-        "-c:v", "libx264",         # Video codec: H.264
-        "-preset", "slow",         # Encoding speed/quality
-        "-crf", "23",              # Quality (lower = better, 18-28 is a good range)
-        "-c:a", "aac",             # Audio codec: AAC
-        "-b:a", "128k",            # Audio bitrate
-        output_file
-    ]
+# def convert_to_h264(input_file, output_file):
+#     command = [
+#         "ffmpeg",
+#         "-i", input_file,          # Input file
+#         "-c:v", "libx264",         # Video codec: H.264
+#         "-preset", "slow",         # Encoding speed/quality
+#         "-crf", "23",              # Quality (lower = better, 18-28 is a good range)
+#         "-c:a", "aac",             # Audio codec: AAC
+#         "-b:a", "128k",            # Audio bitrate
+#         output_file
+#     ]
     
-    subprocess.run(command, check=True)
-    print(f"Conversion completed: {output_file}")
+#     subprocess.run(command, check=True)
+#     print(f"Conversion completed: {output_file}")
 
 # # Example usage
 # input_mp4 = "output/output_video.mp4"
