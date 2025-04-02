@@ -47,11 +47,9 @@ if mode == 'Video Upload':
 
     if uploaded_file:
         # Save uploaded file temporarily
-        temp_dir = tempfile.NamedTemporaryFile(delete=False)
-        input_video_path = os.path.join(temp_dir, uploaded_file.name)
-        
-        with open(input_video_path, "wb") as f:
-            f.write(uploaded_file.read())
+        temp_file = tempfile.NamedTemporaryFile(delete=False)
+        temp_file.write(uploaded_file.read())
+        input_video_path = temp_file.name  # Get the temporary file path
 
         st.video(input_video_path)  # Show uploaded video
 
