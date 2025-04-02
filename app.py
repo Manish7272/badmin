@@ -50,8 +50,8 @@ if mode == 'Video Upload':
         temp_dir = tempfile.mkdtemp()
         input_video_path = os.path.join(temp_dir, uploaded_file.name)
         
-        # with open(input_video_path, "wb") as f:
-        #     f.write(uploaded_file.read())
+        with open(input_video_path, "wb") as f:
+            f.write(uploaded_file.read())
 
         st.video(input_video_path)  # Show uploaded video
 
