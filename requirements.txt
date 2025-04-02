@@ -6,3 +6,4 @@ seaborn
 plotly
 opencv-python
 ultralytics
+opencv-python-headless
